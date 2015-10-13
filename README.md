@@ -1,4 +1,4 @@
-# generator-condensation [![Build Status](https://secure.travis-ci.org/kmcgrath/generator-condensation.png?branch=master)](https://travis-ci.org/kmcgrath/generator-condensation)
+# generator-condensation [![Build Status](https://secure.travis-ci.org/sungardas/generator-condensation.png?branch=master)](https://travis-ci.org/sungardas/generator-condensation)
 
 > [Yeoman](http://yeoman.io) generator
 
