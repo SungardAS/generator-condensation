@@ -32,7 +32,7 @@ npm install -g generator-condensation
 Finally, initiate the generator:
 
 ```bash
-yo condensation
+yo condensation:particles
 ```
 
 ### Getting To Know Yeoman
