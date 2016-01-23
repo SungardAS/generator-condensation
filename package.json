@@ -1,10 +1,10 @@
 {
   "name": "generator-condensation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "particles/index.js",
-  "repository": "kmcgrath/generator-condensation",
+  "repository": "sungardas/generator-condensation",
   "author": {
     "name": "Kevin McGrath",
     "email": "kevin.mcgrath@sungardas.com"
