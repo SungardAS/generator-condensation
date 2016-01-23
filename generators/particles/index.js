@@ -6,7 +6,7 @@ var yosay = require('yosay');
 var _s = require('underscore.string');
 var path = require('path');
 
-module.exports = yeoman.generators.Base.extend({
+module.exports = yeoman.Base.extend({
   prompting: {
 
     askForProjectName: function () {
@@ -15,23 +15,6 @@ module.exports = yeoman.generators.Base.extend({
       var prompts = [{
         name: 'projectName',
         message: 'What\'s the name of your project?'
-      }, {
-        type: 'confirm',
-        name: 'askNameAgain',
-        message: 'The name above already exists on npm, choose another?',
-        default: true,
-        when: function (answers) {
-          var done = this.async();
-          var name = 'particles-' + answers.projectName;
-
-          npmName(name, function (err, available) {
-            if (!available) {
-              done(true);
-            }
-
-            done(false);
-          });
-        }
       }];
 
       this.prompt(prompts, function (props) {

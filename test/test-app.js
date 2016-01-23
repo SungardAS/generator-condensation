@@ -1,14 +1,13 @@
 'use strict';
 
 var path = require('path');
-var assert = require('yeoman-generator').assert;
-var helpers = require('yeoman-generator').test;
+var assert = require('yeoman-assert');
+var helpers = require('yeoman-test');
 var os = require('os');
 
 describe('condensation:particles', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/particles'))
-      .withOptions({ skipInstall: true })
       .withPrompts({ projectName: 'test' })
       .on('end', done);
   });
