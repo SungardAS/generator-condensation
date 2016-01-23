@@ -16,6 +16,7 @@ describe('condensation:particles', function () {
   it('creates files', function () {
     assert.file([
       '.gitignore',
+      'LICENSE',
       'README.md',
       'config/default.js',
       'gulpfile.js',

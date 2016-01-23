@@ -5,8 +5,6 @@
 [![NPM](https://nodei.co/npm/<%= projectName %>.png)](https://nodei.co/npm/<%= projectName %>/)
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/SungardAS/condensation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Dependency
-Status](https://david-dm.org/SungardAS/<%= projectName %>.svg?branch=master)](https://david-dm.org/SungardAS/<%= projectName %>?branch=master)
 
 
 ## Summary
