@@ -76,6 +76,10 @@ module.exports = yeoman.generators.Base.extend({
         this.destinationPath(this.projectName,'.gitignore'),
         {projectName: this.projectName}
       );
+      this.fs.copyTpl(
+        this.templatePath('_LICENSE'),
+        this.destinationPath(this.projectName,'LICENSE')
+      );
     }
   },
 
