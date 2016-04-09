@@ -5,13 +5,7 @@ var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
 var os = require('os');
 
-describe('condensation:particles', function () {
-  before(function (done) {
-    helpers.run(path.join(__dirname, '../generators/particles'))
-      .withPrompts({ projectName: 'test' })
-      .on('end', done);
-  });
-
+var checkFiles = function () {
   it('creates files', function () {
     assert.file([
       '.gitignore',
@@ -19,7 +13,39 @@ describe('condensation:particles', function () {
       'README.md',
       'config/default.js',
       'gulpfile.js',
-      'package.json'
+      'package.json',
+      'particles/assets',
+      'particles/conditions',
+      'particles/cftemplates',
+      'particles/helpers',
+      'particles/mappings',
+      'particles/metadata',
+      'particles/outputs',
+      'particles/parameters',
+      'particles/resources',
+      'particles/sets',
+      'particles/partials'
     ]);
   });
+};
+
+describe('condensation:particles', function () {
+  describe('with prompt', function () {
+    before(function (done) {
+      helpers.run(path.join(__dirname, '../generators/particles'))
+        .withPrompts({ projectName: 'test' })
+        .on('end', done);
+    });
+    checkFiles();
+  });
+
+  describe('with argument', function () {
+    before(function (done) {
+      helpers.run(path.join(__dirname, '../generators/particles'))
+        .withArguments('test')
+        .on('end', done);
+    });
+    checkFiles();
+  });
+
 });
