@@ -5,12 +5,22 @@ var npmName = require('npm-name');
 var yosay = require('yosay');
 var _s = require('underscore.string');
 var path = require('path');
+var mkdirp = require('mkdirp');
 
 module.exports = yeoman.Base.extend({
+  constructor: function () {
+    yeoman.Base.apply(this, arguments);
+
+    this.argument('projectName', {type: String, required: false});
+  },
   prompting: {
 
     askForProjectName: function () {
       var done = this.async();
+
+      if (this.projectName) {
+        return done();
+      }
 
       var prompts = [{
         name: 'projectName',
@@ -39,6 +49,18 @@ module.exports = yeoman.Base.extend({
     },
 
     projectFiles: function () {
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','assets'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','conditions'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','cftemplates'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','helpers'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','mappings'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','metadata'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','outputs'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','parameters'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','resources'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','sets'));
+      mkdirp.sync(this.destinationPath(this.projectName,'particles','partials'));
+
       this.fs.copyTpl(
         this.templatePath('_readme.md'),
         this.destinationPath(this.projectName,'README.md'),
