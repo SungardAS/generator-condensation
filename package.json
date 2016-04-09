@@ -1,8 +1,8 @@
 {
   "name": "generator-condensation",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Yeoman generator",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "main": "particles/index.js",
   "repository": "sungardas/generator-condensation",
   "author": {
