@@ -82,6 +82,11 @@ module.exports = yeoman.Base.extend({
         {projectName: this.projectName}
       );
       this.fs.copyTpl(
+        this.templatePath('_test_particles.js'),
+        this.destinationPath(this.projectName,'test/particles.test.js'),
+        {projectName: this.projectName}
+      );
+      this.fs.copyTpl(
         this.templatePath('_gitignore'),
         this.destinationPath(this.projectName,'.gitignore'),
         {projectName: this.projectName}

@@ -13,6 +13,7 @@ var checkFiles = function () {
       'README.md',
       'CHANGELOG.md',
       'config/default.js',
+      'test/particles.test.js',
       'gulpfile.js',
       'package.json',
       'particles/assets',
