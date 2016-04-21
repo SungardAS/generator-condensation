@@ -46,7 +46,9 @@ him](http://yeoman.io/).
 
 Apache-2.0 ©
 
-## [![Sungard Availability Services | Labs][labs-image]][labs-github-url]
+## Sungard AvailabilityServices | Labs
+
+[![Sungard Availability Services | Labs][labs-image]][labs-github-url]
 
 This project is maintained by the Labs team at [Sungard Availability
 Services](http://sungardas.com)
