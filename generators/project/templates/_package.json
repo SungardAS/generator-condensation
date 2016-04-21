@@ -1,14 +1,18 @@
 {
   "name": "<%= projectName %>",
   "version": "0.0.0",
-  "description": "[Condensation](https://github.com/SungardAS/condensation) particles that build AWS CloudFormation templates.",
+  "description": "Condensation particles for building AWS CloudFormation templates.",
   "license": "Apache-2.0",
   "keywords": [
-    "condensation-particles"
+    "condensation-particles",
+    "aws",
+    "cloudformation",
+    "cloud",
+    "formation"
   ],
   "dependencies": {
-    "condensation": "^0.4.10",
-    "config": "^1.16.0",
+    "condensation": "^0.5.0",
+    "config": "^1.20.0",
     "gulp": "^3.9.1"
   }
 }

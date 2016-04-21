@@ -29,10 +29,10 @@ var checkFiles = function () {
   });
 };
 
-describe('condensation:particles', function () {
+describe('condensation:project', function () {
   describe('with prompt', function () {
     before(function (done) {
-      helpers.run(path.join(__dirname, '../generators/particles'))
+      helpers.run(path.join(__dirname, '../generators/project'))
         .withPrompts({ projectName: 'test' })
         .on('end', done);
     });
@@ -41,7 +41,7 @@ describe('condensation:particles', function () {
 
   describe('with argument', function () {
     before(function (done) {
-      helpers.run(path.join(__dirname, '../generators/particles'))
+      helpers.run(path.join(__dirname, '../generators/project'))
         .withArguments('test')
         .on('end', done);
     });
