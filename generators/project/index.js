@@ -67,6 +67,11 @@ module.exports = yeoman.Base.extend({
         {projectName: this.projectName}
       );
       this.fs.copyTpl(
+        this.templatePath('_changelog.md'),
+        this.destinationPath(this.projectName,'CHANGELOG.md'),
+        {projectName: this.projectName}
+      );
+      this.fs.copyTpl(
         this.templatePath('_gulpfile.js'),
         this.destinationPath(this.projectName,'gulpfile.js'),
         {projectName: this.projectName}
