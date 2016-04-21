@@ -12,21 +12,21 @@ Status][daviddm-image]][daviddm-url]
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-condensation
-using [npm](https://www.npmjs.com/) (we assume you have pre-installed
-[node.js](https://nodejs.org/)).
+using [npm](https://www.npmjs.com/) ([node.js](https://nodejs.org/) is
+required).
 
 ```bash
 npm install -g yo
 npm install -g generator-condensation
 ```
 
-Then generate your new project:
+Then generate the new project:
 
 ```bash
 yo condensation:project particles-PROJECT_NAME
 ```
 
-**It is highly recommened but not required to start names with
+**It is highly recommened but not required to start a project name with
 `particles-`**
 
 ## condensation
