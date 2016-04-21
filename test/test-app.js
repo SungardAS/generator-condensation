@@ -11,6 +11,7 @@ var checkFiles = function () {
       '.gitignore',
       'LICENSE',
       'README.md',
+      'CHANGELOG.md',
       'config/default.js',
       'gulpfile.js',
       'package.json',
