@@ -1,6 +1,16 @@
 sudo: false
 language: node_js
 node_js:
-  - '4'
-  - '0.12'
-  - '0.10'
+- '6'
+- '4'
+- '0.12'
+deploy:
+  provider: npm
+  email: as.us.labs@sungardas.com
+  api_key:
+    secure: KicMUQtHFfUq3A+yoMO6MERy7un44bHWnpYxBQtoG5tIEJJD6zoAjCw3z/x3VTvXc3t/LW7ed8K3LCVjOLSgdcyHFp6i1z8sJHw4ewadR8YnBDxYC7adFgShnNi2SYm3ZULl0pxVZkXec5yPD7gbOBaABVbVtrmA1MWNshA5zWu+upb49L6B516/PKsRWULmjtN8YwjCbAoDyTboRKUlFdnaItwn4AkJXxJPJ7dbWNSL1fdfkPEn8d4Z3UWSrEhicnd66XE+M84GePmWlXktLg3sLkO/lmD/XMvXYrk5GDbXsDlFCw1KemkSs2qfn9Nq7CKEjM/WPiF3ieQDft8FFwFaBaTWBMExhh5Bfyrr7K6mpWL92RrP43FERaUdEbeVKKrsSErQcP4yRYhug+GLDgQB8UpK7mtLweIIsn4PVfpI9AY+alryeSG7NvT6hT8Bo5+FkAzFh8/3htCGd3vRo6ajfJMGMIakmZ4t0jRHS4NcZz4s90AxU2axFOMBSOJ4ENJg9tbyjzi/ev0IXLdVfnM/BNqo0MoG2AOvPZe3KPBmsgCf886pqClRI0kbSl0SDxp0NxE1hngH4XZsw+3z6UGJQttOqbWKCg+NJw39NJHHBiN9ah276vQmap2vDCBRdm/r8KsCVH0oQ1LE0x2Rq2OTplynawKNknDkPE0SPNg=
+  on:
+    tags: true
+    repo: SungardAS/generator-condensation
+    node: 6
+
