@@ -2,7 +2,7 @@ var config = {
   s3: [
     {
       aws: {
-        region: '',
+        region: 'us-east-1',
         bucket: ''
       },
       clean: true,

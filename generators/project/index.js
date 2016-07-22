@@ -1,7 +1,6 @@
 'use strict';
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
-var npmName = require('npm-name');
 var yosay = require('yosay');
 var _s = require('underscore.string');
 var path = require('path');
@@ -13,30 +12,19 @@ module.exports = yeoman.Base.extend({
 
     this.argument('projectName', {type: String, required: false});
   },
-  prompting: {
-
-    askForProjectName: function () {
+  prompting: function () {
+    var self = this;
+    if (!this.projectName) {
       var done = this.async();
-
-      if (this.projectName) {
-        return done();
-      }
-
-      var prompts = [{
+      this.prompt({
+        type: 'input',
         name: 'projectName',
-        message: 'What\'s the name of your project?'
-      }];
-
-      this.prompt(prompts, function (props) {
-        if (props.askNameAgain) {
-          return this.prompting.askForProjectName.call(this);
-        }
-
-        this.projectName = props.projectName;
-        //this.appname = _s.slugify('project-' + this.projectName);
-
+        message: 'Your project name',
+      default: ''
+      }).then(function (answers) {
+        self.projectName = answers.projectName;
         done();
-      }.bind(this));
+      });
     }
   },
   writing: {
