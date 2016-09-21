@@ -90,6 +90,9 @@ module.exports = yeoman.Base.extend({
     var origDir = process.cwd();
     var npmdir = path.join(process.cwd(),this.projectName) ;
     process.chdir(npmdir);
-    this.installDependencies();
+    this.npmInstall([],{
+      silent: true,
+      production: true
+    });
   }
 });
