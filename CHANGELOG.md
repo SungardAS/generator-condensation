@@ -3,6 +3,10 @@ All notable changes to this project will be documented here in
 accordance with [Keep a CHANGELOG][keep-changelog-url].
 This project adheres to [Semantic Versioning][semver-url].
 
+## [0.2.3] - 2016-09-21
+### Changed
+- only install npm non-dev dependencies and make silent
+
 ## [0.2.2] - 2016-07-22
 ### Added
 - npm scripts for the `_package.json` template
