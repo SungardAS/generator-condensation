@@ -11,6 +11,8 @@ module.exports = yeoman.Base.extend({
     yeoman.Base.apply(this, arguments);
 
     this.argument('projectName', {type: String, required: false});
+    this.option('condensation-version', {type: String, required: true, default: "^0.5.9"});
+
   },
   prompting: function () {
     var self = this;
@@ -32,7 +34,10 @@ module.exports = yeoman.Base.extend({
       this.fs.copyTpl(
         this.templatePath('_package.json'),
         this.destinationPath(this.projectName,'package.json'),
-        {projectName: this.projectName}
+        {
+          projectName: this.projectName,
+          condensationVersion: this.options["condensation-version"]
+        }
       );
     },
 
