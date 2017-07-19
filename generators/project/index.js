@@ -11,7 +11,7 @@ module.exports = yeoman.Base.extend({
     yeoman.Base.apply(this, arguments);
 
     this.argument('projectName', {type: String, required: false});
-    this.option('condensation-version', {type: String, required: true, default: "^0.5.9"});
+    this.option('condensation-version', {type: String, required: true, default: "^0.6.10"});
 
   },
   prompting: function () {
