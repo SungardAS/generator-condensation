@@ -3,6 +3,10 @@ All notable changes to this project will be documented here in
 accordance with [Keep a CHANGELOG][keep-changelog-url].
 This project adheres to [Semantic Versioning][semver-url].
 
+## [0.2.5] - 2017-07-19
+### Changed
+- default version of condensation is now 0.6.10
+
 ## [0.2.4] - 2017-01-13
 ### Added
 - new option `--condensation-version` will set the condensation version
