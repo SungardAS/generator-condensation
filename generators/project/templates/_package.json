@@ -17,7 +17,7 @@
     "formation"
   ],
   "dependencies": {
-    "condensation": "^0.5.5",
+    "condensation": "<%= condensationVersion %>",
     "config": "^1.21.0",
     "gulp": "^3.9.1"
   },
